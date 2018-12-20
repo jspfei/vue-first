@@ -12,6 +12,8 @@
     </div>
     <router-link to="/cart">跳转到购物车页面</router-link>
     <button @click="jump">button -  跳转到购物车页面</button>
+    <!--命名式路由-->
+    <router-link v-bind:to="{name:'cart',params:{id:123}}">跳转到购物车页面</router-link>
   </div>
 </template>
 

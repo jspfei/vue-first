@@ -14,7 +14,11 @@ export default new Router({
     {
       path: '/goods',
       name: 'GoodsList',
-      component: GoodsList,
+      components: {
+        default: GoodsList,
+        title: Title,
+        img: Image
+      },
       children: [
         {
           path: 'title',
@@ -30,7 +34,7 @@ export default new Router({
     },
     {
       path:'/cart',
-      name:'Cart',
+      name:'cart',
       component:Cart
     }
   ]
