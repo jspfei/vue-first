@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+  <h2>ES6 demo</h2>
+  <script>
+     let sum3 = (...m)=>{
+        let total = 0;
+        for(var i of m){
+          total +=i;
+        }
+       console.log(`total:${total}`)
+     }
+
+    sum3(3.4,5,2)
+    console.log(...[4,6])
+
+    let arr1 = [1,3];let arr2 = [4,8];
+    console.log("concat:"+arr1.concat(arr2))
+
+    var [x,...y] = [4,5,6,7,7];
+    let [a,b,c] ="ES6";
+
+    let xy = [...'es6'];
+
+  </script>
+
+</body>
+
+</html>

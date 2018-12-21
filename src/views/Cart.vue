@@ -3,6 +3,7 @@
       这是购物车界面
       {{$route.query.id}}
     </div>
+
 </template>
 
 <script>

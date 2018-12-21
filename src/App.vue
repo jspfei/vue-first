@@ -6,7 +6,7 @@
     <router-view class="left" name="title"></router-view>
     <router-view class="right" name="img"></router-view>
   </div>
-</template>
+  </template>
 
 <script>
 export default {
