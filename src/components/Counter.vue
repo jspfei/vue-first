@@ -1,10 +1,31 @@
 <template>
-    $END$
+    <div>
+      <button @click="increment" >+</button>
+      <button v-on:click="decrement">-</button>
+      <p><span>{{num}}</span></p>
+    </div>
 </template>
 
 <script>
     export default {
-        name: "Counter"
+        // props:{ 'num'},
+        data(){
+           return {
+              num:0
+           }
+        },
+        methods:{
+           increment(){
+              this.num ++;
+               // 减小 vue 按下同 过异步加载 js
+              import("./../util");
+
+           },
+          decrement(){
+            this.num --;
+          }
+        }
+
     }
 </script>
 

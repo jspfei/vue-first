@@ -3,9 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+// import {sum ,minus} from "./util"
+// import * as util from './util'
 Vue.config.productionTip = false
 
+// console.log(`sum:${util.sum(3,4)}`)
+// console.log(`minus:${util.minus(10,4)}`)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
