@@ -22,9 +22,9 @@
         methods:{
           jump(){
             //编程式路由
-             // this.$router.push("/cart");
-             // this.$router.push({path:"/cart?id=111"})
-            // this.$router.push({path:"/cart",query:{id:"122"}})
+             this.$router.push("/cart");
+             this.$router.push({path:"/cart?id=111"})
+            this.$router.push({path:"/cart",query:{id:"122"}})
              this.$router.go(-2);
           }
         }

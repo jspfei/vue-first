@@ -8,7 +8,7 @@
 
 <script>
     export default {
-        // props:{ 'num'},
+        props:[ "num"] ,
         data(){
            return {
               num:0
@@ -16,13 +16,14 @@
         },
         methods:{
            increment(){
-              this.num ++;
-               // 减小 vue 按下同 过异步加载 js
-              import("./../util");
-
+              // this.num ++;
+              //  // 减小 vue 按下同 过异步加载 js
+              // import("./../util");
+              this.$emit("incre");
            },
           decrement(){
-            this.num --;
+            // this.num --;
+            this.$emit("decre");
           }
         }
 

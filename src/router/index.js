@@ -5,6 +5,7 @@ import Title from '@/views/Title'
 import Image from '@/views/Image'
 import Cart from '@/views/Cart'
 import Counter from '@/components/Counter'
+import  HelloWorld from '@/components/HelloWorld'
 
 Vue.use(Router)
 
@@ -12,6 +13,11 @@ export default new Router({
   // mode:'hash',
   // mode:'history',
   routes: [
+    {
+      path:'/',
+      name:'HelloWorld',
+      component:HelloWorld
+    },
     {
       path:'/',
       name:'Counter',
